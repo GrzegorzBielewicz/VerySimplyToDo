@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Lista zadan{% endblock %}
+
+{% block content %}
+
+    <ul>
+        {% for zadanie in zadania %}
+            <li> {{ zadanie }}</li>
+        {% endfor %}
+    </ul>
+
+    <form action="" method="post">
+        <input type="text" name="zadanie">
+        <input type="submit" value="Dodaj zadanie!">
+    </form>
+
+{% endblock %}
